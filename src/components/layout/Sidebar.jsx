@@ -36,23 +36,8 @@ const Sidebar = () => {
   const navItems = [
     { path: '/admin/dashboard', label: 'Dashboard' },
     { path: '/admin/users', label: 'Users' },
-    { 
-      path: '/admin/doctors', 
-      label: 'Doctors',
-      submenu: [
-        { path: '/admin/doctors/list', label: 'All Doctors' },
-        { path: '/admin/doctors/add', label: 'Add New' },
-        { path: '/admin/doctors/specialties', label: 'Specialties' }
-      ]
-    },
-    { 
-      path: '/admin/appointments', 
-      label: 'Appointments',
-      submenu: [
-        { path: '/admin/appointments/calendar', label: 'Calendar View' },
-        { path: '/admin/appointments/list', label: 'List View' }
-      ]
-    },
+    { path: '/admin/doctors', label: 'Doctors'},
+    { path: '/admin/appointments', label: 'Appointments'},
     { path: '/admin/medications', label: 'Medications' },
     { path: '/admin/reports', label: 'Reports' },
     { path: '/admin/symptoms', label: 'Symptoms' },
@@ -203,7 +188,7 @@ const Sidebar = () => {
         </nav>
 
         {/* Tooltip for collapsed menu */}
-        {isCollapsed && (
+        {/* {isCollapsed && (
           <div className="absolute left-full top-0 ml-2 hidden lg:block">
             <div className="bg-gray-900 text-white text-sm rounded shadow-lg p-2 whitespace-nowrap">
               {navItems.map((item) => (
@@ -213,7 +198,7 @@ const Sidebar = () => {
               ))}
             </div>
           </div>
-        )}
+        )} */}
       </aside>
     </>
   );
