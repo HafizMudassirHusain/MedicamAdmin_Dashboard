@@ -41,14 +41,7 @@ const Sidebar = () => {
     { path: '/admin/medications', label: 'Medications' },
     { path: '/admin/reports', label: 'Reports' },
     { path: '/admin/symptoms', label: 'Symptoms' },
-    { 
-      path: '/admin/settings', 
-      label: 'Settings',
-      submenu: [
-        { path: '/admin/settings/profile', label: 'Profile' },
-        { path: '/admin/settings/security', label: 'Security' }
-      ]
-    },
+    { path: '/admin/settings', label: 'Settings'},
   ];
 
   // Close mobile menu and submenus on route change

@@ -8,8 +8,8 @@ import Doctors from './pages/DoctorManagement';
 import Appointments from './pages/AppointmentManagement';
 import Medications from './pages/Medications';
 import Reports from './pages/Reports';
-// import Symptoms from './pages/Symptoms';
-// import Settings from './pages/Settings';
+import Symptoms from './pages/symptom';
+import Settings from './pages/Settings';
 
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
               <Route path="/admin/appointments" element={<Appointments />} />
               <Route path="/admin/medications" element={<Medications />} />
               <Route path="/admin/reports" element={<Reports />} />
-              {/* <Route path="/admin/symptoms" element={<Symptoms />} />
-              <Route path="/admin/settings" element={<Settings />} /> */}
+              <Route path="/admin/symptoms" element={<Symptoms />} />
+              <Route path="/admin/settings" element={<Settings />} />
             </Routes>
           </MainContent>
         </div>
